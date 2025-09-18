@@ -12,9 +12,10 @@ const App = () => {
             iscompleted: false,
         }
         settodos([...todos, newtodos]);
+        settitle("");
     }
-
     console.log(todos);
+    
 
     return (
         <>
@@ -22,11 +23,11 @@ const App = () => {
                 <input type="text" onChange={(e) => settitle(e.target.value)} placeholder='title' value={title} />
                 <button>hell</button>
             </form>
-            <ul>
+            <ol>
                 {todos.map((todo) => (
                     <li key={todo.id}>{todo.title}</li>
                 ))}
-            </ul>
+            </ol>
         </>
     )
 }
