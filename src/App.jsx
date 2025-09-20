@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { nanoid } from 'nanoid'
 const App = () => {
-    const [todos, settodos] = useState([{ id: 1, title: "just beginning", iscompleted: false }]);
+    const [todos, settodos] = useState([]);
     const [title, settitle] = useState("");
     const submitHandler = (e) => {
         e.preventDefault();
