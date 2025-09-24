@@ -4,7 +4,7 @@ import { Create } from './Create';
 import { Read } from './Read';
 const App = () => {
     
-    const [todos, settodos] = useState([{id : 1, title : "hello"}]);
+    const [todos, settodos] = useState([{id : 0, title : "hello"}]);
     
     
 
